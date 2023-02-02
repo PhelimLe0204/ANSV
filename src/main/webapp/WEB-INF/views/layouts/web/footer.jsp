@@ -36,13 +36,13 @@
                 <div class="col-lg-2 col-md-6 col-sm-6 footer-links">
                     <h4>Liên kết</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="trang-chu">Trang
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/trang-chu" />">Trang
                             chủ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="ve-chung-toi">Về
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/ve-chung-toi" />">Về
                             chúng tôi</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="dich-vu">Dịch
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/dich-vu" />">Dịch
                             vụ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="du-an-tieu-bieu">Dự án tiêu biểu</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/du-an-tieu-bieu" />">Dự án tiêu biểu</a></li>
 
                     </ul>
                 </div>
@@ -50,10 +50,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 footer-links">
                     <h4>Dịch vụ & giải pháp của chúng tôi</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="chuyen-nganh-vien-thong">Chuyên ngành viễn thông</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="cong-nghe-thong-tin">Công nghệ thông tin</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="chuyen-doi-so">Chuyển đổi số</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="dich-vu">Dịch vụ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/chuyen-nganh-vien-thong" />">Chuyên ngành viễn thông</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/cong-nghe-thong-tin" />">Công nghệ thông tin</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/chuyen-doi-so" />">Chuyển đổi số</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="<c:url value="/dich-vu" />">Dịch vụ</a></li>
 
                     </ul>
                 </div>

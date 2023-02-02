@@ -17,6 +17,7 @@ public class NewsDtoMapper implements RowMapper<NewsDto> {
 		news.setSummary(rs.getString("summary"));
 		news.setContent(rs.getString("content"));
 		news.setUrl(rs.getString("url"));
+		news.setNews_type(rs.getInt("news_type"));
 		news.setClassify(rs.getString("classify"));
 		news.setUpdated_at(rs.getDate("updated_at"));
 		news.setUpdated_by(rs.getString("updated_by"));

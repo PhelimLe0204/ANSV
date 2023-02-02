@@ -39,7 +39,8 @@
 				<div class="container">
 					<div class="row mb-5">
 						<div class="col-md-6 col-6">
-							<h2 class="title_news"><i>${item_news_type.name}</i></h2>
+						
+							<h2 class="title_news"><a href="tin-tuc/type/${item_news_type.id}">${item_news_type.name}</a></h2>
 						</div>
 						<div class="col-md-6 col-6">
 							<!-- <div class="float-right pt-5">
@@ -170,7 +171,7 @@
 											<div class="p-n-info">
 												<div class="mb-2">
 													<span class="p-n-cat">
-														<a href="javascript:void(0)">${item_news1.classify}</a>
+														<a href="<c:url value='tin-tuc/type/${item_news1.news_type }' />">${item_news1.classify}</a>
 													</span>
 													<span class="pd-r-l-6">|</span>
 													<%--<span class="p-n-date">${item_news1.updated_at}</span>--%>
@@ -184,6 +185,7 @@
 									</c:if>
 								</c:forEach>
 								
+								
 								<%-- Loại tin tức thứ hai --%>
 								<c:forEach var="item_news2" items="${news2}" varStatus="index_news2">
 									<c:if test="${(not index_news2.first) && item_news2.classify == item_news_type.name}">
@@ -191,7 +193,7 @@
 											<div class="p-n-info">
 												<div class="mb-2">
 													<span class="p-n-cat">
-														<a href="javascript:void(0)">${item_news2.classify}</a>
+														<a href="<c:url value='tin-tuc/type/${item_news2.news_type }' />">${item_news2.classify}</a>
 													</span>
 													<span class="pd-r-l-6">|</span>
 													<%--<span class="p-n-date">${item_news2.updated_at}</span>--%>
@@ -227,7 +229,7 @@
 											<div class="p-n-info">
 												<div class="mb-2">
 													<span class="p-n-cat">
-														<a href="javascript:void(0)">${item_news3.classify}</a>
+														<a href="<c:url value='tin-tuc/type/${item_news3.news_type }' />">${item_news3.classify}</a>
 													</span>
 													<span class="pd-r-l-6">|</span>
 													<%--<span class="p-n-date">${item_news3.updated_at}</span>--%>
@@ -248,7 +250,7 @@
 											<div class="p-n-info">
 												<div class="mb-2">
 													<span class="p-n-cat">
-														<a href="javascript:void(0)">${item_news4.classify}</a>
+														<a href="<c:url value='tin-tuc/type/${item_news4.news_type }' />">${item_news4.classify}</a>
 													</span>
 													<span class="pd-r-l-6">|</span>
 													<%--<span class="p-n-date">${item_news3.updated_at}</span>--%>

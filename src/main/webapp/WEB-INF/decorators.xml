@@ -83,6 +83,12 @@
 	<decorator name="tin-tuc" page="about.jsp">
 		<pattern>/tin-tuc</pattern>
 	</decorator>
+	
+	<decorator name="tin-tuc/type/*" page="about.jsp">
+		<pattern>/tin-tuc/type/*</pattern>
+	</decorator>
+	
+	
 
 	<decorator name="thong-diep" page="about.jsp">
 		<pattern>/thong-diep</pattern>

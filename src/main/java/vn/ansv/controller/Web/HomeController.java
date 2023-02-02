@@ -187,6 +187,47 @@ public class HomeController extends WebBaseController {
 		return _mvShare;
 	}
 	
+	@RequestMapping(value = "/tin-tuc/type/1", method = RequestMethod.GET)
+	public ModelAndView tin_tuc_ict() {
+		
+		_mvShare.addObject("newICT",_newsService.findAllByType1());
+		
+		_mvShare.setViewName("web/news/tin-tuc-ict");
+		return _mvShare;
+		
+	}
+	
+	@RequestMapping(value = "/tin-tuc/type/2", method = RequestMethod.GET)
+	public ModelAndView tin_tuc_noi_bo() {
+		
+		_mvShare.addObject("new_noi_bo",_newsService.findAllByType2());
+		
+		_mvShare.setViewName("web/news/tin-tuc-noi-bo");
+		return _mvShare;
+		
+	}
+	
+	@RequestMapping(value = "/tin-tuc/type/3", method = RequestMethod.GET)
+	public ModelAndView tin_tuc_truyen_thong() {
+		
+		_mvShare.addObject("new_truyen_thong",_newsService.findAllByType3());
+		
+		_mvShare.setViewName("web/news/tin-tuc-truyen-thong");
+		return _mvShare;
+		
+	}
+	
+	@RequestMapping(value = "/tin-tuc/type/4", method = RequestMethod.GET)
+	public ModelAndView tin_tuc_tuyen_dung() {
+		
+		_mvShare.addObject("new_tuyen_dung",_newsService.findAllByType4());
+		
+		_mvShare.setViewName("web/news/tin-tuc-tuyen-dung");
+		return _mvShare;
+		
+	}
+	
+	
 	@RequestMapping(value = { "/mesh_vs_rep" }, method = RequestMethod.GET)
 	public ModelAndView mesh_vs_rep() {
 		ModelAndView mav = new ModelAndView("web/news/mesh_vs_rep");

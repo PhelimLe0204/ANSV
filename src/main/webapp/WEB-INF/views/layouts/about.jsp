@@ -95,6 +95,9 @@
 	    border-radius: 16px 16px 0 0;
 	    background-color: #fff;
 	}
+	.title_news a{
+		color: #ffa500;
+	}
 </style>
 
 </head>
