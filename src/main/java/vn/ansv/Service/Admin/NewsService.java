@@ -63,4 +63,20 @@ public class NewsService {
 		return newsDao.findLimitByType4();
 	}
 	
+	public List<NewsDto> findAllByType1(){
+		return newsDao.findAllByType1();
+	}
+	
+	public List<NewsDto> findAllByType2(){
+		return newsDao.findAllByType2();
+	}
+	
+	public List<NewsDto> findAllByType3(){
+		return newsDao.findAllByType3();
+	}
+	
+	public List<NewsDto> findAllByType4(){
+		return newsDao.findAllByType4();
+	}
+	
 }

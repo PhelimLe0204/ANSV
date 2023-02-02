@@ -10,6 +10,7 @@ public class NewsDto {
 	private String summary;
 	private String content;
 	private String url;
+	private int news_type;
 	private String classify;
 	private Date updated_at;
 	private String updated_by;
@@ -20,24 +21,26 @@ public class NewsDto {
 	
 	
 	
-	public NewsDto(String img, String title, String summary, String content, String url, String classify, Date updated_at, String updated_by) {
+	public NewsDto(String img, String title, String summary, String content, String url, int news_type, String classify, Date updated_at, String updated_by) {
 		this.img = img;
 		this.title = title;
 		this.summary = summary;
 		this.content = content;
 		this.url = url;
+		this.news_type = news_type;
 		this.classify = classify;
 		this.updated_at = updated_at;
 		this.updated_by = updated_by;
 	}
 	
-	public NewsDto(int id, String img, String title, String summary, String content, String url, String classify, Date updated_at, String updated_by) {
+	public NewsDto(int id, String img, String title, String summary, String content, String url,int news_type ,String classify, Date updated_at, String updated_by) {
 		this.id = id;
 		this.img = img;
 		this.title = title;
 		this.summary = summary;
 		this.content = content;
 		this.url = url;
+		this.news_type = news_type;
 		this.classify = classify;
 		this.updated_at = updated_at;
 		this.updated_by = updated_by;
@@ -45,7 +48,7 @@ public class NewsDto {
 
 	@Override
 	public String toString() {
-		return "News [id=" + id + ", img=" + img + ", title=" + title + ", summary=" + summary + ", content=" + content + ", url=" + url + ", classify=" + classify + ", updated_at=" + updated_at + ", updated_by=" + updated_by + "]";
+		return "News [id=" + id + ", img=" + img + ", title=" + title + ", summary=" + summary + ", content=" + content + ", url=" + url + ",news_type=" + news_type + ", classify=" + classify + ", updated_at=" + updated_at + ", updated_by=" + updated_by + "]";
 	}
 
 
@@ -96,6 +99,14 @@ public class NewsDto {
 
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	
+	public int getNews_type() {
+		return news_type;
+	}
+
+	public void setNews_type(int news_type) {
+		this.news_type = news_type;
 	}
 
 	public String getClassify() {

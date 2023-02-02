@@ -39,7 +39,7 @@
 									<div class="col-md-9">
 										<span><a id="link" href="<c:url value='/tin-tuc'/>">Tin tức</a></span>
 										<span id="arrow">&gt;</span> 
-										<span class=""><a>${get_new.classify}</a></span> 
+										<span class=""><a href="<c:url value='/tin-tuc/type/${get_new.news_type}'/>">${get_new.classify}</a></span> 
 									</div>
 									<div class="col-md-1">
 										

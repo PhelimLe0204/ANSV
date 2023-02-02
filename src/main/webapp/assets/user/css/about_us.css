@@ -1709,6 +1709,11 @@ section {
    	font-size: 14px;
    	line-height: 1.8em;
 }
+
+.post-new{
+	border-radius: 16px;
+	background-color: #dddddd7d;
+}
 .products .cat {
     text-transform: uppercase;
     margin-bottom: 10px;
