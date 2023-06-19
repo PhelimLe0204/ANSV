@@ -70,7 +70,7 @@
 							<div class="text-center">
 								<figure class="image">
 									<img alt=""
-										src="<c:url value="/assets/user/img/so_do_1.png" />">
+										src="<c:url value="/assets/user/img/so-do-2.jpg" />">
 									<figcaption>Sơ đồ tổ chức của công ty</figcaption>
 								</figure>
 							</div>
